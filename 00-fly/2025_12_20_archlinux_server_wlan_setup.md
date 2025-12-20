@@ -50,18 +50,15 @@ Now, configure iwd to automatically connect to you WiFi network (SSID), in order
     2.2. Put this on the file:
     
     ```
-    ```
-    [[General]]
+    [General]
     EnableNetworkConfiguration=true
     DisablePowerSave=true
 
-    [[Network]]
+    [Network]
     RoutePriorityOffset=300
 
-    [[Settings]]
+    [Settings]
     AutoConnect=true
-    ```
-    ```
     ```
 
 3. **Optional:** edit this file: `sudo nvim /var/lib/iwd/<your_SSID>.psk` it should already have the security config from previous connection, just add:
